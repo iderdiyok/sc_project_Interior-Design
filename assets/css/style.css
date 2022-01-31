@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Work+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+a{
+    color: unset;
+    text-decoration: none;
+    color: #fff;
+}
+h1,h2,h3{
+    font-family: 'Lora', serif;
+    font-weight: 500;
+}
+h2{
+    text-align: center;
+    font-size: 2.4em;
+    margin-bottom: .5em;
+}
+a,p,figcaption,input,textarea{
+    font-family: 'Work sans', sans-serif;
+}
+p{
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 2em;
+    letter-spacing: .1em;
+}
+
+/* ///// */
+/* HEADER */
+/* ///// */
+header section{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 100vh;
+    align-items: center;
+}
+header .text{
+    text-align: center;
+    color: #2e2e2e;
+}
+header .text h1{
+    font-size: 5em;
+}
+header .text h4{
+    font-weight: 400;
+    letter-spacing: .1em;
+}
+header .img{
+    height: 100%;
+    background: url(../img/design-interior-1.jpg) no-repeat center/cover;
+}
+header nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul{
+    gap: 9em;
+    padding-right: 5em;
+    font-size: 1.2em;
+}
+header nav, #ourstory, #contact{
+    background-color: #2e2e2e;
+}
+/* ///// */
+/* MAIN */
+/* ///// */
+
+/* ourstory */
+#ourstory{
+    height: 90vh;
+    background-color: #2e2e2e;
+    display: grid;
+    grid-template-columns: 53% 47%;
+    justify-content: space-between;
+    align-items: center;
+}
+#ourstory img{
+    width: 100%;
+}
+#ourstory .text{
+    padding: 0 3em;
+    color: #fff;
+}
+
+/* designs */
+#designs{
+    height: 150vh;
+    padding: 10em 0;
+}
+#designs article:nth-of-type(1){
+    width: 45%;
+    margin: 0 auto;
+}
+#designs article:nth-of-type(2){
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    padding: 5em 4em;
+}
+#designs article:nth-of-type(2) figure{
+    width: 30%;
+    text-align: center;
+}
+#designs article:nth-of-type(2) img{
+    width: 100%;
+}
+#designs article:nth-of-type(3) iframe{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 30%;
+    height: 30%;
+}
+
+/* contact */
+#contact{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    place-items: center;
+    color: #fff;
+}
+#contact article{
+    width: 70%;
+}
+#contact .text h2{
+    text-align: left;
+}
+label{
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+}
+input:not(:last-of-type), textarea{
+    width: 80%;
+    display: block;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+input, textarea, #submit{
+    font-size: .6rem;
+}
+input:last-of-type{
+    font-weight: 600;
+    padding: 1em;
+}
+/* ///// */
+/* FOOTER */
+/* ///// */
+footer{
+    height: 10vh;
+    background-color: #1d2c2f;
+    color: #fff;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+}
+footer p, footer a{
+    font-family: 'Lora', serif;
+    margin: 0;
+}
+footer ul{
+    gap: 3em;
+}

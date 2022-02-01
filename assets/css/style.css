@@ -38,7 +38,7 @@ p{
 /* ///// */
 /* HEADER */
 /* ///// */
-header section{
+header{
     display: grid;
     grid-template-columns: 40% 60%;
     height: 100vh;
@@ -59,21 +59,27 @@ header .img{
     height: 100%;
     background: url(../img/design-interior-1.jpg) no-repeat center/cover;
 }
-header nav{
+
+/* ///// */
+/* NAVIGATION */
+/* ///// */
+nav{
     position: sticky;
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
 }
-header nav ul{
+nav ul{
     gap: 9em;
     padding-right: 5em;
     font-size: 1.2em;
 }
-header nav, #ourstory, #contact{
+nav, #ourstory, #contact{
     background-color: #2e2e2e;
 }
+
 /* ///// */
 /* MAIN */
 /* ///// */

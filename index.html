@@ -11,23 +11,22 @@
 
 <body>
     <header>
-        <section>
-            <article class="text">
-                <h1>H & H</h1>
-                <h4>&#126; THE INTERIOR STANDARD &#126;</h4>
-            </article>
-            <article class="img"></article>
-        </section>
-        <nav>
-            <img src="assets/img/logo.png" alt="logo" class="logo">
-            <ul class="navigation">
-                <li><a href="#">H&H</a></li>
-                <li><a href="#ourstory">OUR STORY</a></li>
-                <li><a href="#designs">DESIGNS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-        </nav>
+        <article class="text">
+            <h1>H & H</h1>
+            <h4>&#126; THE INTERIOR STANDARD &#126;</h4>
+        </article>
+        <article class="img"></article>
     </header>
+
+    <nav>
+        <img src="assets/img/logo.png" alt="logo" class="logo">
+        <ul class="navigation">
+            <li><a href="#">H&H</a></li>
+            <li><a href="#ourstory">OUR STORY</a></li>
+            <li><a href="#designs">DESIGNS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
     <main>
         <section id="ourstory">
             <article class="img">
@@ -90,12 +89,12 @@
             <article class="form">
                 <form onsubmit="return false">
                     <label for="name">Name</label>
-                    <input type="text" name="name" placeholder="Enter name" required>
+                    <input type="text" name="name" id="name" placeholder="Enter name" required>
                     <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="Enter email" required>
+                    <input type="email" name="email" id="email" placeholder="Enter email" required>
                     <label for="message">Message</label>
-                    <textarea name="message" placeholder="Optional"></textarea>
-                    <input type="submit" value="Submit">
+                    <textarea name="message" id="message" placeholder="Optional"></textarea>
+                    <input type="submit" value="Submit" onclick="formInfo()">
                 </form>
             </article>
         </section>
@@ -109,6 +108,7 @@
             <li><a href="#">CONTACT</a></li>
         </ul>
     </footer>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
